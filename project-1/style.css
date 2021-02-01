@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.sky {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    z-index: 1;
+}
+
+.ocean {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: -35%
+}
+
+.sand{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    top: 18%;
+}
+
+.compcluster1 {
+    position: absolute;
+    bottom: -18%;
+    left: 3%;
+    z-index: 3;
+}
+
+.compcluster2 {
+    position: absolute;
+    width: 40%;
+    bottom: -20%;
+    right: 5%;
+    z-index: 3;
+
+}
+
+.seaweed{
+    position: absolute;
+    width: 25%;
+    bottom: -10%;
+    left: 1%;
+    z-index: 4;
+}
+
+.mic{
+    position: absolute;
+    z-index: 4;
+    width: 40%;
+    bottom: -24%;
+    right: -5%;
+}
+
+.fish{
+    position: absolute;
+    z-index: 3;
+}
