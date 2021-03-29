@@ -5,6 +5,7 @@
     <title>Asha's Homepage</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
 
@@ -15,7 +16,7 @@
         <h1 class="title2">ASHA RAO</h1>
         <h1 class="title" id="gradient_text">ASHA RAO</h1>
 
-        <p> I am a senior at USC's Media Arts + Practice program, and an aspiring UI/UX designer. This website displays my work done for IML 400, a class in creative code. I don't have much experience with coding, but am hoping to get much better! </p>
+        <p id="intro"> I am a senior at USC's Media Arts + Practice program, and an aspiring UI/UX designer. This website displays my work done for IML 400, a class in creative code. I don't have much experience with coding, but am hoping to get much better! </p>
     </div>
 
     <div class="row">
@@ -26,25 +27,80 @@
 
         <div class="column2">
             <h1 class="category">Projects</h1>
+
             <h2>Project 1: Cybernetic Garden</h2>
             <a href="../project-1/index.html" target="blank">Searching The Clouds</a>
+
+            <!-- read more/less button code from w3schools at: 
+            https://www.w3schools.com/howto/howto_js_read_more.asp
+            -->
+
+            <p id="description">For <span style="color: #F28705; font-style: italic;">Searching The Clouds</span> I was inspired to look more closely at my own relationship with technology. I will<span id="dots1">...</span><span id="more1" style="display:none;"> admit, there are flaws and dependencies in the way I use the internet and create my presence online, but in the spirit of the poem, I decided to give this project a more positive twist. I went back through my overflowing screenshots folder and collected 9 of my favorite screenshots. They each remind me of who I was at different points in time, who I was friends with and how we have all changed till now, and in general, they helped me relish in some good ol' nostalgia. This project is (hopefully!) a warm celebration of the way technology can bring people together. I used HTML5, CSS, AND jQuery to complete this project.</span></p>
+
+            <button onclick="button1()" class="myBtn" id="b1">Read more</button>
+
             <h2>Project 2: Collective Digital Care</h2>
-            <a href="" target="blank">Final: Lorem Ipsum</a>
+            <a href="https://editor.p5js.org/asharao99/sketches/KMj_jj1pS" target="blank">A Winter's Dream</a>
+
+            <p id="description">When thinking about care, especially self care, my thoughts first jumped to nature. Nature may be<span id="dots2">...</span><span id="more2" style="display:none;"> grounding or may simply present a brief respite away from present responsibilities. As the world becomes increasingly digital, it is harder and harder to capture those moments of relief away from screens. <span style="color: #F28705; font-style: italic;">A Winter’s Dream</span> attempts to provide some replication of this feeling through a digital format; it can never take the place of nature, but funnily enough, might still be more accessible than the outdoors. I chose to simulate winter because of its quietness. Some people revel in sunshine and greenery, but others escape through pure solitude. </span></p>
+
+            <button onclick="button2()" class="myBtn" id="b2">Read more</button>
+
             <h2>Project 3: OTHER Worldbuilding</h2>
             <a href="" target="blank">Final: Lorem Ipsum</a>
+
+            <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots3">...</span><span id="more3" style="display:none;">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+            <button onclick="button3()" class="myBtn" id="b3">Read more</button>
+
         </div>
 
         <div class="column3">
             <h1 class="category">Exercises</h1>
-            <a href="" target="blank">p5.js sketch 1</a><br>
-            <a href="" target="blank">p5.js sketch 2</a>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="https://editor.p5js.org/asharao99/sketches/_A6qgqMEV" target="_blank">Retro Candy</a><br>
+                    <div style="height:5px;"></div>
+                    <iframe src="https://editor.p5js.org/asharao99/embed/_A6qgqMEV"></iframe>
+                </div>
+                
+                <div style="height:10px;"></div>
+
+                <div class="grid-item">
+                    <a href="https://editor.p5js.org/asharao99/sketches/k1kGwxlvE"target="_blank">Etch-A-Sketch</a><br>
+                    <div style="height:5px;"></div>
+                    <iframe src="https://editor.p5js.org/asharao99/embed/k1kGwxlvE"></iframe>
+                </div>
+                
+                <div style="height:10px;"></div>
+
+                <div class="grid-item">
+                    <a href="https://editor.p5js.org/asharao99/sketches/ig3Fe2mot"target="_blank">Iterative Patterns</a><br>
+                    <div style="height:5px;"></div>
+                    <iframe src="https://editor.p5js.org/asharao99/embed/ig3Fe2mot"></iframe>
+                </div>
+                
+                 <div style="height:10px;"></div>
+
+                <div class="grid-item">
+                    <a href="https://editor.p5js.org/Q/sketches/zex08m5LW" target="_blank">Exercise 4: Lorem Ipsum</a><br>
+                    <iframe src="https://editor.p5js.org/Q/embed/zex08m5LW"></iframe>
+                </div>
+            </div>
         </div>
 
         <div class="column4">
             <h1 class="category">Thoughts</h1>
-            <a href="" target="blank">Lorem Ipsum</a>
+            <a href="cybernetics.html">Cybernetics</a> <br>
+            <a href="rdc.html">Radical Digital Care</a> <br>
+            <a href="cyberfeminism.html">Cyberfeminism</a> <br>
+            <a href="consentfultech.html">Consentful Tech</a> <br>
+            <a href="indtech.html">Indigenous Technology</a> <br>
+            <a href="designjustice.html">Design Justice</a>
         </div>
     </div>
 
 
-</body></html>
+</body>
+
+</html>
